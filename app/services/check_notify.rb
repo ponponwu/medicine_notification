@@ -17,9 +17,12 @@ module CheckNotify
           notifies.each do |notify|
             record = sent_record.select{ |r| r.notification_id == notify.id }
             # (none record) or (record exists but not today's')
-            if !record || record.created_at.strftime('%A') != notify.wday
-              push_notifications(notify)
-              notify.update(taken_medicine: true)
+            # 2 hours later notify
+            if Time.now.strftime("%H%M").to_i - 2 >= notify.medicine_time.to_i
+              if !record || record.created_at.strftime('%A') != notify.wday
+                push_notifications(notify)
+                notify.update(taken_medicine: true)
+              end
             end
           end
         end # Thread
