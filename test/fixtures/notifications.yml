@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  wday: MyString
+  country: MyString
+  medicine_id: 
+  medicine_time: MyString
+  medicine_pill_num: 
+  enabled: false
+  taken_medicine: false
+
+two:
+  user_id: 
+  wday: MyString
+  country: MyString
+  medicine_id: 
+  medicine_time: MyString
+  medicine_pill_num: 
+  enabled: false
+  taken_medicine: false
