@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use	Case：
+在加州的使用者 Andy 買了一個藥盒送給他在台灣的老爸，想要知道老爸有沒有按時吃藥，
+老爸拿到藥盒之後就設定了每週的一三五早上 9 點要吃藥，
+但是到了禮拜一的 11 點(台灣時間)	Andy 收到一則 push	notification 告訴他，
+他老爸忘記吃藥，於是 Andy 就打電話給他老爸提醒他要吃藥
+請設計最小 scope 的系統，不限定任何技術，可以使用任何套件：
+- [API]	使用者能夠新增需要吃藥的時間
+- [API]	使用者如果吃了藥能回傳吃藥時間
+- 系統能夠檢查使用者有沒有吃藥
+- 如果使用者沒有吃藥，2 小時後，需要主動發送 push	notification 給他的家人
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
